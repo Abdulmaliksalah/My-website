@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>فندق الأحلام</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div><strong>فندق الأحلام</strong></div>
+    <div>
+      <a href="index.html">الرئيسية</a>
+      <a href="rooms.html">الغرف</a>
+      <a href="booking.html">الحجز</a>
+      <a href="services.html">الخدمات</a>
+      <a href="gallery.html">المعرض</a>
+      <a href="reviews.html">تقييمات العملاء</a>
+      <button onclick="toggleTheme()">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <h2>نموذج الحجز</h2>
+    <form id="bookingForm" onsubmit="reserveRoom(event)">
+      <input type="text" name="name" placeholder="اسمك الكامل" required>
+      <select name="roomType" required>
+        <option value="">اختر نوع الغرفة</option>
+        <option value="غرفة قياسية" data-price="50">غرفة قياسية - $50/ليلة</option>
+        <option value="غرفة فاخرة" data-price="100">غرفة فاخرة - $100/ليلة</option>
+        <option value="جناح رئاسي" data-price="200">جناح رئاسي - $200/ليلة</option>
+      </select>
+      <input type="number" name="nights" placeholder="عدد الليالي" min="1" required>
+      <p id="totalPrice"></p>
+      <button type="submit">احجز الآن</button>
+    </form>
+
+    <h3>الحجوزات الحالية</h3>
+    <table id="bookingTable">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>نوع الغرفة</th>
+          <th>الليالي</th>
+          <th>السعر/ليلة</th>
+          <th>السعر الإجمالي</th>
+          <th>الاجراء</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  
+  <footer>&copy; 2025 فندق الأحلام</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

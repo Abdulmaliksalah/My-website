@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الغرف - فندق الأحلام</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>
+  <div><strong>فندق الأحلام</strong></div>
+ <div>
+    <a href="index.html">الرئيسية</a>
+    <a href="rooms.html">الغرف</a>
+    <a href="booking.html">الحجز</a>
+    <a href="services.html">الخدمات</a>
+    <a href="gallery.html">المعرض</a>
+    <a href="reviews.html">تقييمات العملاء</a>
+    <button onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+<section>
+<h2>غرف الفندق</h2>
+<div class="room-grid">
+  <div class="card">
+    <img src="standard room.jpg" alt="غرفة قياسية">
+    <h3>غرفة قياسية</h3>
+    <p>سرير مزدوج، حمام خاص، وإطلالة رائعة.</p>
+    <p><strong>$50 / الليلة</strong></p>
+    <button onclick="location.href='booking.html'">احجز الآن</button>
+  </div>
+  <div class="card">
+    <img src="bridal room.jpg" alt="غرفة فاخرة">
+    <h3>غرفة فاخرة</h3>
+    <p>غرفة واسعة مع شرفة وسرير ملكي.</p>
+    <p><strong>$100 / الليلة</strong></p>
+    <button onclick="location.href='booking.html'">احجز الآن</button>
+  </div>
+  <div class="card">
+    <img src="wing.jpg" alt="جناح رئاسي">
+    <h3>جناح رئاسي</h3>
+    <p>أفخم جناح مع كل وسائل الراحة الفاخرة.</p>
+    <p><strong>$200 / الليلة</strong></p>
+    <button onclick="location.href='booking.html'">احجز الآن</button>
+  </div>
+</div>
+</section>
+<footer>&copy; 2025 فندق الأحلام</footer>
+<script src="script.js"></script>
+</body>
+</html>
